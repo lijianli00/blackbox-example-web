@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="design-iconfont">
+  <g transform="translate(-721 -225)">
+    <rect width="24" height="24" rx="4" transform="translate(721 225)" fill="rgba(74,134,255,.1)"/>
+    <rect width="4.781" height="4.781" rx="1.062" fill="#4a86ff" transform="rotate(-90 491.0375 -246.4825)"/>
+    <rect width="4.781" height="4.781" rx="1.062" fill="#4a86ff" transform="rotate(-90 485.651 -251.869)"/>
+    <rect width="6.226" height="6.226" rx="1.594" fill="#4a86ff" transform="rotate(-90 484.446 -239.554)"/>
+    <path d="M81.289,2572.418H79.906v-7.966h1.383v.357a2.937,2.937,0,0,0,2.934,2.935h3.391a4.323,4.323,0,0,1,4.318,4.318H90.549a2.938,2.938,0,0,0-2.934-2.935H84.224a4.3,4.3,0,0,1-2.934-1.153Z" transform="rotate(-90 -755.758 1078.468)" fill="#4a86ff"/>
+  </g>
+</svg>
