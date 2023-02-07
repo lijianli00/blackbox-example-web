@@ -1,9 +1,8 @@
 <template>
-  <div class="h-full flex-center">
-    <div class="w-350 bg-#fff rounded-10 py-40 px-30">
-      <div class="text-center text-24 font-600 mb-20">用户登录</div>
+  <div class="h-full login-box">
+    <div>
       <i class="i-ic-baseline-search"></i>
-      <sh-login-box></sh-login-box>
+      <sh-login-box class="login"></sh-login-box>
     </div>
   </div>
 </template>
@@ -12,4 +11,16 @@
 import { ShLoginBox } from 'blackbox-ui'
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.login-box {
+  background-image: url(./img/login-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .login {
+    position: absolute;
+    top: 22%;
+    right: 8%;
+  }
+}
+</style>
