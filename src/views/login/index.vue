@@ -1,14 +1,15 @@
 <template>
   <div class="h-full login-box">
-    <div>
-      <i class="i-ic-baseline-search"></i>
-      <sh-login-box class="login"></sh-login-box>
+    <div class="login">
+      <p class="text-[#202837] tracking-widest text-center text-40 font-bold mb-90">{{ title }}</p>
+      <sh-login-box></sh-login-box>
     </div>
   </div>
 </template>
 
 <script setup>
 import { ShLoginBox } from 'blackbox-ui'
+const title = import.meta.env.VITE_APP_TITLE
 </script>
 
 <style lang="scss" scoped>
@@ -19,7 +20,7 @@ import { ShLoginBox } from 'blackbox-ui'
   background-position: center;
   .login {
     position: absolute;
-    top: 22%;
+    top: 11%;
     right: 8%;
   }
 }
