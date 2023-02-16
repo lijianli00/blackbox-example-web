@@ -11,7 +11,7 @@ export default defineConfig(({ command, mode }) => {
 
   return {
     plugins: createVitePlugins(viteEnv, isBuild),
-    base: VITE_PUBLIC_PATH || './',
+    base: VITE_PUBLIC_PATH || '/',
     resolve: {
       // 设置别名
       alias: {
