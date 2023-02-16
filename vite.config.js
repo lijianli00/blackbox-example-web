@@ -1,8 +1,8 @@
 import { defineConfig, loadEnv } from 'vite'
-import { getSrcPath, createVitePlugins, wrapperEnv, createProxy } from './build'
+import { getSrcPath, getRootPath, createVitePlugins, wrapperEnv, createProxy } from './build'
 
 export default defineConfig(({ command, mode }) => {
-  const rootPath = getSrcPath()
+  const rootPath = getRootPath()
   const srcPath = getSrcPath()
   const env = loadEnv(mode, process.cwd())
   const viteEnv = wrapperEnv(env)
