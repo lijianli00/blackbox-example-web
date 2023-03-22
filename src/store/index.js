@@ -1,6 +1,13 @@
-import { setupStore } from 'blackbox-ui'
-import { router } from '../router'
+import Vuex from 'vuex'
+import Vue from 'vue'
+import { userStore } from 'blackbox-ui'
+// import userStore from './module/user'
 
-export function setupPinia(app) {
-  setupStore(app, import.meta.env, router)
-}
+Vue.use(Vuex)
+const store = new Vuex.Store({
+  modules: {
+    userStore
+  }
+})
+
+export default store

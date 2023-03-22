@@ -1,8 +1,16 @@
 <template>
-  <sh-app>
-    <router-view></router-view>
-  </sh-app>
+  <div>
+    <router-view />
+  </div>
 </template>
+
 <script setup>
-import { ShApp } from 'blackbox-ui'
+import { ref } from 'vue'
+
+const formValue = ref({})
+
+const str = 'dddd'
+console.log(str)
 </script>
+
+<style lang="scss" scoped></style>

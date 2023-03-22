@@ -1,14 +1,19 @@
-import { createApp } from 'vue'
-import 'blackbox-ui/es/style.css'
-import 'uno.css'
-import { setupPinia } from './store'
-import { setupRouter, router } from './router'
-import { setupBlackbox } from 'blackbox-ui'
-import App from './app.vue'
-import 'virtual:svg-icons-register'
+import Vue from 'vue'
+import App from './App.vue'
+import ElementUI from 'element-ui'
+import BlackboxUI from 'blackbox-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+import router from './router'
+import store from './store'
 
-const app = createApp(App)
-setupPinia(app)
-setupRouter(app)
-setupBlackbox(app, router)
-app.mount('#app')
+Vue.config.productionTip = false
+
+Vue.use(ElementUI)
+Vue.use(BlackboxUI, router, store)
+const app = new Vue({
+  router,
+  store,
+  render: h => h(App)
+}).$mount('#app')
+
+export default app

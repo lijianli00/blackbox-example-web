@@ -6,7 +6,7 @@
   "prettier.printWidth": 120,
   "prettier.singleQuote": true,
   "prettier.semi": false,
-  "prettier.endOfLine": "lf",
+  "prettier.endOfLine": "auto",
 
   "[javascript]": {
     "editor.formatOnSave": false

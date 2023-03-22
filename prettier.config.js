@@ -2,5 +2,5 @@ module.exports = {
   endOfLine: 'auto',
   printWidth: 120,
   singleQuote: true,
-  semi: false,
+  semi: false
 }

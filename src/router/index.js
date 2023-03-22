@@ -1,15 +1,19 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import VueRouter from 'vue-router'
 import routes from './module'
-import { setupRouterGuard } from './guard'
+import Vue from 'vue'
+Vue.use(VueRouter)
 
-export const router = createRouter({
-  // history: createWebHashHistory('/'),
-  history: createWebHistory('/'),
-  routes,
-  scrollBehavior: () => ({ left: 0, top: 0 }),
+const router = new VueRouter({
+  mode: 'history',
+  routes
 })
 
-export function setupRouter(app) {
-  app.use(router)
-  setupRouterGuard(router)
+export function useRouter() {
+  return router
 }
+
+export function useRoute() {
+  return router.currentRoute
+}
+
+export default router

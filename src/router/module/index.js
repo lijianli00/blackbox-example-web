@@ -1,4 +1,3 @@
-import { admin, blank } from './admin'
-import { system } from './system'
+import { sys } from './sys'
 
-export default [system, admin, blank]
+export default [...sys]
