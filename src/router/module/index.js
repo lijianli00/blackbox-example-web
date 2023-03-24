@@ -1,3 +1,4 @@
-import { sys } from './sys'
+import { admin } from './admin'
+import { system } from './system'
 
-export default [...sys]
+export default [system, ...admin]

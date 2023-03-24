@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: ['plugin:vue/recommended', 'plugin:prettier/recommended'],
+  extends: ['plugin:vue/vue3-recommended', 'plugin:prettier/recommended'],
   rules: {
     'prettier/prettier': 'error',
     'vue/valid-template-root': 'off',
@@ -8,8 +8,8 @@ module.exports = {
     'vue/multi-word-component-names': [
       'error',
       {
-        ignores: ['index', '401', '404']
-      }
-    ]
-  }
+        ignores: ['index', '401', '404'],
+      },
+    ],
+  },
 }

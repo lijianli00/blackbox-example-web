@@ -4,13 +4,6 @@
   </div>
 </template>
 
-<script setup>
-import { ref } from 'vue'
+<script setup></script>
 
-const formValue = ref({})
-
-const str = 'dddd'
-console.log(str)
-</script>
-
-<style lang="scss" scoped></style>
+<style scoped></style>
