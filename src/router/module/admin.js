@@ -1,6 +1,5 @@
 import { RouterError404, RouterError405 } from 'blackbox-ui'
 import Layout from '../../layout/index.vue'
-console.log(333, RouterError404.component)
 
 export const admin = [
   {
