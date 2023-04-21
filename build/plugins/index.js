@@ -1,8 +1,8 @@
 import vue from '@vitejs/plugin-vue2'
 // import Components from 'unplugin-vue-components/vite'
 
-import Unocss from 'unocss/vite'
-import { presetUno, presetAttributify, presetIcons } from 'unocss'
+import { unocss } from './unocss'
+// import { presetUno, presetAttributify, presetIcons } from 'unocss'
 import { splitVendorChunkPlugin } from 'vite'
 // import { ElementUiResolver } from 'unplugin-vue-components/resolvers'
 
@@ -18,9 +18,7 @@ export function createVitePlugins(viteEnv, isBuild) {
     //   resolvers: [ElementUiResolver()]
     // }),
     // Unocss
-    Unocss({
-      presets: [presetUno(), presetAttributify(), presetIcons()]
-    })
+    unocss()
   ]
 
   return plugins

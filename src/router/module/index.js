@@ -1,4 +1,4 @@
 import { admin } from './admin'
-import { system } from './system'
+import { system, platform } from './system'
 
-export default [system, ...admin]
+export default [system, platform, ...admin]
