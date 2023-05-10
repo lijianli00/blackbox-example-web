@@ -13,7 +13,7 @@ import './utils/http.js'
 Vue.config.productionTip = false
 
 Vue.use(ElementUI)
-Vue.use(BlackboxUI, router)
+Vue.use(BlackboxUI, router, store)
 
 const app = new Vue({
   router,
