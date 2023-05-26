@@ -1,6 +1,7 @@
 import VueRouter from 'vue-router'
 import routes from './module'
 import Vue from 'vue'
+// import { setupRouterGuard } from './guard'
 Vue.use(VueRouter)
 
 // vue跳转相同路径报错
@@ -29,5 +30,7 @@ export function useRouter() {
 export function useRoute() {
   return router.currentRoute
 }
+
+// setupRouterGuard(router)
 
 export default router
