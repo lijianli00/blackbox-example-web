@@ -1,6 +1,7 @@
 import VueRouter from 'vue-router'
 import routes from './module'
 import Vue from 'vue'
+import store from '@/store'
 // import { setupRouterGuard } from './guard'
 Vue.use(VueRouter)
 
@@ -19,6 +20,7 @@ VueRouter.prototype.replace = function push(location, onResolve, onReject) {
 }
 
 const router = new VueRouter({
+  base: store.state.userStore.env.VITE_PUBLIC_PATH || '/',
   mode: 'history',
   routes
 })
