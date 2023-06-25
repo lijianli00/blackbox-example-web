@@ -3,8 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "vite --mode dev",
+    "build": "vite build --mode dev",
+    "build-test": "vite build --mode test",
+    "build-prod": "vite build --mode prod",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -12,7 +14,7 @@
     "@unocss/preset-attributify": "^0.44.1",
     "@unocss/preset-icons": "^0.44.1",
     "@unocss/preset-uno": "^0.44.1",
-    "blackbox-ui": "^1.0.10-beta",
+    "blackbox-ui": "^1.0.12-beta",
     "crypto-js": "^4.1.1",
     "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.5.0",
