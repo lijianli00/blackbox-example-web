@@ -5,6 +5,7 @@ import { unocss } from './unocss'
 // import { presetUno, presetAttributify, presetIcons } from 'unocss'
 import { splitVendorChunkPlugin } from 'vite'
 // import { ElementUiResolver } from 'unplugin-vue-components/resolvers'
+import requireTransform from 'vite-plugin-require-transform'
 
 // html title
 import { configHtmlPlugin } from './html'
@@ -18,6 +19,9 @@ export function createVitePlugins(viteEnv, isBuild) {
     //   resolvers: [ElementUiResolver()]
     // }),
     // Unocss
+    requireTransform({
+      fileRegex: /.js$|.jsx$ | .vue$/
+    }),
     unocss()
   ]
 

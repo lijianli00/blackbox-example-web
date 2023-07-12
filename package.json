@@ -14,7 +14,7 @@
     "@unocss/preset-attributify": "^0.44.1",
     "@unocss/preset-icons": "^0.44.1",
     "@unocss/preset-uno": "^0.44.1",
-    "blackbox-ui": "^1.0.12-beta",
+    "blackbox-ui": "^1.0.19-beta",
     "crypto-js": "^4.1.1",
     "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.5.0",
@@ -25,25 +25,27 @@
     "sass-loader": "^8.0.2",
     "unocss": "^0.44.1",
     "vite": "^2.9.9",
-    "vite-plugin-html": "^3.2.0"
+    "vite-plugin-html": "^3.2.0",
+    "vite-plugin-require-transform": "^1.0.20"
   },
   "dependencies": {
+    "@jiaminghi/data-view": "^2.10.0",
     "@vitejs/plugin-legacy": "^1.8.2",
     "@vitejs/plugin-vue2": "^1.1.2",
     "@vue/composition-api": "^1.7.1",
     "axios": "^0.27.2",
+    "dayjs": "^1.11.7",
     "element-ui": "^2.15.13",
     "jsencrypt": "^3.3.1",
     "mockjs": "^1.1.0",
     "nprogress": "^0.2.0",
-    "sortablejs": "^1.15.0",
-    "vuex": "^3.4.0",
-    "dayjs": "^1.11.7",
-    "vue-pdf-embed": "^1.1.5",
     "pdfjs-dist": "2.5.207",
+    "sortablejs": "^1.15.0",
     "unplugin-vue-components": "^0.21.1",
     "vue": "2.7.0",
+    "vue-pdf-embed": "^1.1.5",
     "vue-request": "2.0.0-rc.3",
-    "vue-router": "3.5.4"
+    "vue-router": "3.5.4",
+    "vuex": "^3.4.0"
   }
 }

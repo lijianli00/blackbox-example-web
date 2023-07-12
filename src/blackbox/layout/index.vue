@@ -1,5 +1,5 @@
 <template>
-  <ShLayout>222</ShLayout>
+  <ShLayout></ShLayout>
 </template>
 
 <script>

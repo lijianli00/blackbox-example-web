@@ -1,8 +1,8 @@
 import VueRouter from 'vue-router'
 import routes from './module'
 import Vue from 'vue'
-import store from '@/store'
-// import { setupRouterGuard } from './guard'
+import store from '../store'
+import { setupRouterGuard } from './guard'
 Vue.use(VueRouter)
 
 // vue跳转相同路径报错
@@ -33,6 +33,6 @@ export function useRoute() {
   return router.currentRoute
 }
 
-// setupRouterGuard(router)
+setupRouterGuard(router)
 
 export default router
