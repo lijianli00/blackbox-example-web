@@ -1,7 +1,7 @@
 import Vuex from 'vuex'
 import Vue from 'vue'
 import { userStore, tagsStore } from 'blackbox-ui'
-import { projectStore } from '@/project/router'
+import { projectStore } from '@/project/store'
 
 const env = import.meta.env
 Vue.use(Vuex)
