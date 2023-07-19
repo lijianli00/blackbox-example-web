@@ -4,8 +4,8 @@
 
 <script setup>
 import { useRoute, useRouter } from 'blackbox-ui'
-import { LOGIN } from '@/apis/system'
-import store from '@/store'
+import { LOGIN } from '@/blackbox/apis/system'
+import store from '@/blackbox/store'
 
 const route = useRoute()
 const router = useRouter()
