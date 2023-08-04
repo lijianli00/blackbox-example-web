@@ -2,7 +2,8 @@
   <div class="h-full login-box flex justify-end">
     <div class="absolute top-10% left-10% text-36 font-600">{{ title }}</div>
     <div class="w-9/24 h-full flex-center">
-      <div class="login shadow rounded-4">
+      <!-- shadow -->
+      <div class="login  rounded-4">
         <p class="text-20 text-center font-600">用户登录</p>
         <div class="p-40">
           <sh-login-box class="w-260"></sh-login-box>
