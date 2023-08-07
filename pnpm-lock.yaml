@@ -88,8 +88,8 @@ importers:
         specifier: ^0.53.5
         version: 0.53.5
       blackbox-ui:
-        specifier: 1.0.30-beta
-        version: 1.0.30-beta
+        specifier: 1.0.33-beta
+        version: 1.0.33-beta
       crypto-js:
         specifier: ^4.1.1
         version: 4.1.1
@@ -1355,8 +1355,8 @@ packages:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
     engines: {node: '>=8'}
 
-  /blackbox-ui@1.0.30-beta:
-    resolution: {integrity: sha512-sgvH/vp8FOtT9xIljWkjJixAXho20/K0Xwsx76dQ373UXODZazIw8llO70nOX9OqxZ1KOw1gS6hmrQVxDvtYHg==}
+  /blackbox-ui@1.0.33-beta:
+    resolution: {integrity: sha512-/bWEZ4iBNi8yHLNJXhkLcEvYYXiDEQkeMmZ3qUVc5pb16DEEMqrs9+E2+IcMNKviHS0idQ5S6/AaHdywjQqzfw==}
     dev: true
 
   /bluebird@3.7.2:
