@@ -1,5 +1,10 @@
 <template>
-  <div id="app" v-loading.fullscreen.lock="fullscreenLoading" element-loading-background="rgba(0,0,0,0.05)">
+  <div
+    id="app"
+    v-loading.fullscreen.lock="fullscreenLoading"
+    class="wh-full"
+    element-loading-background="rgba(0,0,0,0.05)"
+  >
     <router-view />
   </div>
 </template>
