@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-import 'uno.css'
+import 'virtual:uno.css'
 
 import ElementUI from 'element-ui'
 import BlackboxUI from 'blackbox-ui'

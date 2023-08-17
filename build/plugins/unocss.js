@@ -4,7 +4,10 @@ import transformerDirective from '@unocss/transformer-directives'
 
 export function unocss() {
   return Unocss({
-    presets: [presetUno(), presetAttributify(), presetIcons()],
+    /** 排除 */
+    exclude: ['node_modules'],
+    presets: [/** 默认预设 */ presetUno(), /** 属性化模式 & 无值的属性模式 */ presetAttributify(), presetIcons()],
+    /** 自定义快捷方式 */
     shortcuts: {
       'wh-full': 'w-full h-full',
       'flex-center': 'flex justify-center items-center',
