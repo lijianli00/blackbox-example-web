@@ -8,6 +8,7 @@ export default defineConfig(({ command, mode }) => {
   const env = loadEnv(mode, process.cwd())
   const viteEnv = wrapperEnv(env)
   const {
+    VITE_NODE_ENV,
     VITE_PORT,
     VITE_PUBLIC_PATH,
     VITE_PROXY,
@@ -22,7 +23,7 @@ export default defineConfig(({ command, mode }) => {
   return {
     plugins: createVitePlugins(viteEnv, isBuild),
     base: VITE_PUBLIC_PATH || '/',
-    productionSourceMap: false,
+    productionSourceMap: VITE_NODE_ENV === 'dev' ? true : false,
     define: {
       'process.env': {
         VUE_APP_TITLE: VITE_APP_TITLE,
