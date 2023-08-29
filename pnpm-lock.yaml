@@ -88,8 +88,8 @@ importers:
         specifier: ^0.53.5
         version: 0.53.5
       blackbox-ui:
-        specifier: 1.0.33-beta
-        version: 1.0.33-beta
+        specifier: 1.0.36-beta
+        version: 1.0.36-beta
       crypto-js:
         specifier: ^4.1.1
         version: 4.1.1
@@ -1355,8 +1355,8 @@ packages:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
     engines: {node: '>=8'}
 
-  /blackbox-ui@1.0.33-beta:
-    resolution: {integrity: sha512-/bWEZ4iBNi8yHLNJXhkLcEvYYXiDEQkeMmZ3qUVc5pb16DEEMqrs9+E2+IcMNKviHS0idQ5S6/AaHdywjQqzfw==}
+  /blackbox-ui@1.0.36-beta:
+    resolution: {integrity: sha512-LdxZY1BLg3vWHGt8B2nC/wHC7Lig2WsbUpQd/1Dx5uB4mTVlptje85D+kwrk6GEGDrsVSTMsOvY1AStL41tKJQ==}
     dev: true
 
   /bluebird@3.7.2:
@@ -3942,8 +3942,8 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
 
-  /vue-demi@0.14.5(@vue/composition-api@1.7.1)(vue@2.7.0):
-    resolution: {integrity: sha512-o9NUVpl/YlsGJ7t+xuqJKx8EBGf1quRhCiT6D/J0pfwmk9zUwYkC7yrF4SZCe6fETvSM3UNL2edcbYrSyc4QHA==}
+  /vue-demi@0.14.6(@vue/composition-api@1.7.1)(vue@2.7.0):
+    resolution: {integrity: sha512-8QA7wrYSHKaYgUxDA5ZC24w+eHm3sYCbp0EzcDwKqN3p6HqtTCGR/GVsPyZW92unff4UlcSh++lmqDWN3ZIq4w==}
     engines: {node: '>=12'}
     hasBin: true
     requiresBuild: true
@@ -3995,7 +3995,7 @@ packages:
     dependencies:
       '@vue/composition-api': 1.7.1(vue@2.7.0)
       vue: 2.7.0
-      vue-demi: 0.14.5(@vue/composition-api@1.7.1)(vue@2.7.0)
+      vue-demi: 0.14.6(@vue/composition-api@1.7.1)(vue@2.7.0)
     dev: false
 
   /vue-resize-sensor@2.0.0:
