@@ -12,6 +12,11 @@ export default [
     meta: { title: '重定向', notLogin: true },
     component: () => import('../../views/ztLogin/index.vue')
   },
+  {
+    path: '/qcLogin',
+    meta: { title: '公众号登录', notLogin: true },
+    component: () => import('../../views/qcLogin/index.vue')
+  },
   ...project,
   ...RouterBlackbox // 一定要放在最后面
 ]
