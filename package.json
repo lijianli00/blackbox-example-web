@@ -10,14 +10,13 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@unocss/transformer-directives": "^0.53.5",
-    "blackbox-ui": "1.0.52-beta",
-    "vite-plugin-require-transform": "^1.0.20",
     "@iconify-json/twemoji": "^1.1.5",
     "@originjs/vite-plugin-commonjs": "^1.0.3",
     "@unocss/preset-attributify": "^0.44.1",
     "@unocss/preset-icons": "^0.44.1",
     "@unocss/preset-uno": "^0.44.1",
+    "@unocss/transformer-directives": "^0.53.5",
+    "blackbox-ui": "1.0.54-beta",
     "crypto-js": "^4.1.1",
     "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.5.0",
@@ -30,6 +29,7 @@
     "unocss": "^0.44.1",
     "vite": "^2.9.9",
     "vite-plugin-html": "^3.2.0",
+    "vite-plugin-require-transform": "^1.0.20",
     "vite-plugin-vue2": "^2.0.3"
   },
   "dependencies": {
@@ -46,6 +46,8 @@
     "pdfjs-dist": "2.5.207",
     "sortablejs": "^1.15.0",
     "unplugin-vue-components": "^0.21.1",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-progress": "^0.0.7",
     "vue": "2.7.0",
     "vue-pdf-embed": "^1.1.5",
     "vue-request": "2.0.0-rc.3",
