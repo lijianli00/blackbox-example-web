@@ -48,7 +48,7 @@
     "unplugin-vue-components": "^0.21.1",
     "vite-plugin-compression": "^0.5.1",
     "vite-plugin-progress": "^0.0.7",
-    "vue": "2.7.0",
+    "vue": "2.7.14",
     "vue-pdf-embed": "^1.1.5",
     "vue-request": "2.0.0-rc.3",
     "vue-resize-sensor": "^2.0.0",
