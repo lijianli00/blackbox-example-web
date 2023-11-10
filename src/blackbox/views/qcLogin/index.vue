@@ -21,7 +21,7 @@
             <el-input v-model="form.bindData.password" placeholder="密码" size="default"> </el-input>
           </sh-form-item>
           <sh-form-item class="margin-none">
-            <el-button type="primary" class="w-full" size="default" @click="binding">绑定</el-button>
+            <el-button type="primary" class="w-full" size="default" @click="binding">绑定1</el-button>
           </sh-form-item>
         </sh-form>
       </div>
@@ -49,11 +49,13 @@
         </sh-form>
       </div>
       <div class="c-red">{{ message }}</div>
+      <!-- <div class="c-red">{{ errMessage }}</div> -->
     </div>
   </div>
 </template>
 
 <script>
+import { appLogin } from '../../apis/appLogin'
 export default {
   data() {
     return {
@@ -63,6 +65,7 @@ export default {
       timer: null,
       loginInput: false,
       message: '',
+      errMessage: '',
       form: {
         type: 'PASSWORD', // 绑定校验类型，可以自定义，然后在addUser方法中根据type自行处理。默认四种类型：手机认证码校验：AUTH_CODE_PHONE；邮箱认证码校验：AUTH_CODE_EMAIL；密码校验：PASSWORD；新用户：NEW_USER。
         authenticationType: 'WECHAT_OFFICIAL_SPECIAL', // 认证类型，随login时的类型
@@ -101,7 +104,7 @@ export default {
     },
     getAuthCode() {
       this.$post(
-        this.$store.state.userStore.env.VUE_APP_PORT + '/oauth/getAuthCode',
+        appLogin.getAuthCode,
         {
           authName: this.form2.bindData.loginName,
           authenticationType: 'WECHAT_OFFICIAL_SPECIAL'
@@ -126,7 +129,7 @@ export default {
     },
     binding() {
       this.$post(
-        this.$store.state.userStore.env.VUE_APP_PORT + '/oauth/threeUserBind',
+        appLogin.threeUserBind,
         this.form,
         res => {
           if (res.code == 0) {
@@ -154,8 +157,6 @@ export default {
     getBaseInfos() {
       const code = this.getQueryString('code') // 截取路径中的code
       const state = this.getQueryString('state')
-      if (!code) {
-      }
       if (code) {
         const data = {
           code: code,
@@ -163,7 +164,7 @@ export default {
           authenticationType: 'WECHAT_OFFICIAL_SPECIAL'
         }
         this.$post(
-          this.$store.state.userStore.env.VUE_APP_PORT + '/oauth/login',
+          appLogin.login,
           data,
           res => {
             if (res.code === 0) {
@@ -186,7 +187,7 @@ export default {
             }
           },
           err => {
-            this.message = '请绑定账号！'
+            this.message = err.data
             this.loginInput = true
             this.form.id = err.data
             this.form2.id = err.data
@@ -206,7 +207,7 @@ export default {
 
     onSubmit() {
       this.$post(
-        this.$store.state.userStore.env.VUE_APP_PORT + '/oauth/threeUserBind',
+        appLogin.threeUserBind,
         this.form2,
         res => {
           if (res.code == 0) {
