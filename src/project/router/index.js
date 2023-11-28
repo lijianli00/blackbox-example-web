@@ -1,3 +1,3 @@
-import { demo, demoBlank } from './module/demo'
+import { demoBlank } from './module/demo'
 
-export const project = [demo, ...demoBlank]
+export const project = [...demoBlank]
