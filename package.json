@@ -16,7 +16,7 @@
     "@unocss/preset-icons": "^0.44.1",
     "@unocss/preset-uno": "^0.44.1",
     "@unocss/transformer-directives": "^0.53.5",
-    "blackbox-ui": "1.0.91-beta",
+    "blackbox-ui": "1.0.100-beta",
     "crypto-js": "^4.1.1",
     "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.5.0",

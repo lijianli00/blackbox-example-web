@@ -1,6 +1,6 @@
 <template>
   <div>
-    <sh-config-login :app-id="appId" :qc-login-api="qcLoginApi"></sh-config-login>
+    <sh-config-login qc-login-api="qcLoginApi"></sh-config-login>
   </div>
 </template>
 <script>
@@ -10,9 +10,7 @@ export default {
   components: { ShConfigLogin },
   data() {
     return {
-      qcLoginApi: '',
-      // 应用id 唯一标识   由应用管理列表  对应应用
-      appId: 'demodemo'
+      qcLoginApi: ''
     }
   },
   computed: {

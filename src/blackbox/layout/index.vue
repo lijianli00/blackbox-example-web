@@ -14,6 +14,7 @@
   <ShLayout></ShLayout>
 </template>
 <script>
+import logoUrl from '../assets/3hlogo.png'
 import { ShLayout } from 'blackbox-ui'
 export default {
   components: {
@@ -21,6 +22,13 @@ export default {
   },
   data() {
     return {}
+  },
+  mounted() {
+    const setting = {
+      logoUrl: logoUrl, //标题图标
+      breadHeader: 'breadcrumb' //breadHeader等于breadcrumb 为面包屑导航 tags为标签导航
+    }
+    this.$store.commit('configStore/SET_Setting', setting)
   },
   methods: {
     // 例子   登录之后 跳转 指定路由界面   或者使用 调用 登录之后的方法

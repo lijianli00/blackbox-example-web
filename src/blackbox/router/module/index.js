@@ -13,11 +13,6 @@ export default [
   },
   {
     path: '/login',
-    meta: { title: '登录', notLogin: true },
-    component: () => import('../../views/login/index.vue')
-  },
-  {
-    path: '/login2',
     meta: {
       title: '配置登录',
       notLogin: true
