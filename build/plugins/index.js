@@ -2,6 +2,7 @@ import vue from '@vitejs/plugin-vue2'
 import unocss from 'unocss/vite'
 import progress from 'vite-plugin-progress'
 import { splitVendorChunkPlugin } from 'vite'
+import legacy from '@vitejs/plugin-legacy'
 // html title
 import { configHtmlPlugin } from './html'
 // rollup打包分析插件
@@ -28,7 +29,8 @@ export function createVitePlugins(viteEnv, isBuild) {
         gzipSize: true,
         brotliSize: true
       })
-    )
+    ),
+    plugins.push(legacy())
   }
 
   return plugins

@@ -34,6 +34,7 @@ export default defineConfig(({ command, mode }) => {
       }
     },
     build: {
+      target: 'es2015',
       outDir: 'dist' + (VITE_PUBLIC_PATH || '')
     },
     server: {
