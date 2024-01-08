@@ -30,6 +30,7 @@ export function createVitePlugins(viteEnv, isBuild) {
         brotliSize: true
       })
     ),
+      // eslint-disable-next-line prettier/prettier
     plugins.push(legacy())
   }
 
