@@ -9,7 +9,18 @@ export default [
       notAuth: true
     },
     component: () => import('../../layout/index.vue'),
-    children: RouterCustomLayout
+    children: [
+      ...RouterCustomLayout,
+      ...project,
+      {
+        path: '/blackbox/BasicTasks',
+        meta: {
+          title: '基础待办',
+          notLogin: true
+        },
+        component: () => import('../../views/basicTasks/index.vue')
+      }
+    ]
   },
   {
     path: '/login',

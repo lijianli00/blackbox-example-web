@@ -5,10 +5,10 @@
  *  notLogin： 不需要登录就能访问的页面
  * }
  */
-export const demoBlank = [
+export const base = [
   {
-    path: '/project/test',
-    meta: { title: '测试', notLogin: true },
-    component: () => import('@/project/views/system/login/index.vue')
+    path: '/222',
+    meta: { title: '基础待办', notLogin: true },
+    component: () => import('@/project/views/system/ztLogin/index.vue')
   }
 ]
